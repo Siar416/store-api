@@ -11,8 +11,10 @@ const start = async () => {
     // Product.deleteMany() removes any previous data from db before we populate it with the json products array
     await Product.deleteMany();
     await Product.create(jsonProducts);
+    process.exit(0);
   } catch (error) {
     console.log(error);
+    process.exit(1);
   }
 };
 
