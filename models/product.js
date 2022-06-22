@@ -21,7 +21,7 @@ const ProductSchema = new mongoose.Schema({
     type: Date,
     default: Date.now(),
   },
-  compnay: {
+  company: {
     type: String,
     // enum limits the values that could be selected
     enum: {
